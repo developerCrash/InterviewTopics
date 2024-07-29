@@ -1,0 +1,48 @@
+Topics
+======
+
+L3 
+----
+OSPF
+BGP
+
+L2
+---
+VRRP
+LLDP
+STP
+LAG
+LACP
+MACSEC
+VLAN
+
+L2 
+===
+TCP/IP
+UDP
+DNS
+DHCP
+3 way Handshaking 
+Cloud on Ramp
+
+General
+--------
+Life of a packet 
+Ping 
+Trace route 
+nginx
+Load Balancer 
+Proxy 
+Reverse Proxy 
+
+Programming 
+------------
+Python 
+Java 
+Selenium
+Django
+Robot Framework 
+SQL
+
+
+
