@@ -44,8 +44,22 @@ vlan
 System type
 
 https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/task/layer-2-services-lldp-configuring.html
+
+
 LACP
 ----
+Link Aggregation Control Protocol 
+which is a method of combining multiple physical interfaces into one logical interface
+
+set interfaces ge-0/0/6 ether-options 802.3ad ae0
+set interfaces ge-0/0/7 ether-options 802.3ad ae0
+set interfaces ae0 vlan-tagging 
+set interfaces ae0 aggregated-ether-options lacp active periodic fast
+set interfaces ae0 unit 0 family ethernet-switching interface-mode trunk
+set vlan vlan1000 vlan-id 1000
+set interfaces ae0 unit 0 family ethernet-switching vlan members vlan1000
+
+https://www.juniper.net/documentation/us/en/software/junos/interfaces-security-devices/topics/topic-map/security-interface-config-lacp.html#d112e49
 
 STP
 ----
