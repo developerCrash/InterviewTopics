@@ -1,6 +1,11 @@
 Ospf 
 ====
+open shortest path firat protocol
+its a dynamic routing protocol that helps find the best path for data exchange in an IP network. 
+It uses a link-state approach to create a map of the network topology and update Link-State tables as needed. 
+OSPF is scalable, can adapt to network changes quickly, and provides efficient routing with minimal overhead
 
+Read OSPF from linked in Cheat Sheet 
 
 Bgp
 ===
