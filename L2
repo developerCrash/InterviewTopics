@@ -1,1 +1,57 @@
 L2 Topics 
+=========
+VRRP
+----
+Virtual route redundancy protocol
+
+RouterA:
+--------
+set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.1/24 vrrp-group 1 virtual-address 10.1.1.254
+set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.1/24 vrrp-group 1 priority 110
+set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.1/24 vrrp-group 1 accept-data
+set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.1/24 vrrp-group 1 track interface ge-0/0/2 priority-cost 20
+set interfaces ge-0/0/2 unit 0 family inet address 10.1.3.1/24
+set routing-options static route 0.0.0.0/0 next-hop 10.1.3.2
+
+RouterB
+-------
+set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.2/24 vrrp-group 1 virtual-address 10.1.1.254
+set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.2/24 vrrp-group 1 accept-data
+set interfaces ge-0/0/2 unit 0 family inet address 10.1.4.1/24
+set routing-options static route 0.0.0.0/0 next-hop 10.1.4.2
+
+Router C
+--------
+set interfaces ge-0/0/0 unit 0 family inet address 10.1.1.3/24
+set routing-options static route 0.0.0.0/0 next-hop 10.1.1.254
+
+
+https://www.juniper.net/documentation/us/en/software/junos/high-availability/topics/example/vrrp-configuring-example.html#verification406__id-verifying-that-vrrp-is-working-on-router-a
+
+
+LLDP
+-----
+Link Layer Discovery Protocol
+Allows Network Devices to allow their capabilities 
+
+advertisement-interval—The default value is 30 seconds. The allowable range is from 5 through 32768 seconds.
+chassis-id-type—The default value is MAC address.
+chassis-id-value—The default value is system-mac.
+hold-multiplier—The default values is 4. The allowable range is from 2 through 10.
+ptopo-configuration-maximum-hold-time—The default value is 300 seconds. The allowable range is from 1 through 2147483647 seconds.
+transmit-delay—The default values is 2 seconds. The allowable range is from 1 through 8192 seconds.
+vlan 
+System type
+
+https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/task/layer-2-services-lldp-configuring.html
+LACP
+----
+
+STP
+----
+
+
+MACSEC
+-------
+
+
