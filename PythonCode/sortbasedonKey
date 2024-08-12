@@ -1,0 +1,40 @@
+def sort_by(data, key="name"):
+
+    ## your code
+    new_data = []
+    
+    list_vals = []
+    
+    
+    for i in data:
+        list_vals.append(i[key])
+        
+    list_vals.sort()
+        
+    for i in list_vals:
+        for j in data:
+            if j[key] == i: ## Add code to remove duplicates
+                new_data.append(j)
+                
+    return new_data
+        
+
+emp_record = [
+    {
+        "name": "David",
+        "age": "35",
+        "emp_id": 1001
+    },
+    {
+        "name": "John",
+        "age": "30",
+        "emp_id": 1010
+    },
+    {
+        "name": "Kapil",
+        "age": "40",
+        "emp_id": 900
+    }
+]
+
+print(sort_by(emp_record, key="age"))
