@@ -13,8 +13,9 @@ def sort_by(data, key="name"):
         
     for i in list_vals:
         for j in data:
-            if j[key] == i: ## Add code to remove duplicates
+            if j[key] == i:
                 new_data.append(j)
+                data.remove(j)
                 
     return new_data
         
