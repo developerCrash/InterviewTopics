@@ -1,0 +1,22 @@
+What is Different between Unit Test and Pytest 
+What is diference between Git and GitLab ? 
+Decorators, Iterators and Generators - Sample code
+
+What is Git rebase ? 
+How to revert a particular commit 
+what is difference between append and extends 
+Change key to value and value to key in same dictionary 
+What is Middle ware function ? Have you implemented it ? 
+Write a class based middleware Function 
+
+What is Signalling 
+
+What is Kafka ? 
+WHat is Jenkins 
+What is ORM in Dango ? Have you written any ORM ? 
+Dango Crud OPerations 
+Difference between get, filter 
+Explain Status Codes
+
+What is diff between Sql and Mongo DB ? 
+Write Query to get the name of an employee with highest salary 
