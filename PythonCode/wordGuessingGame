@@ -1,0 +1,35 @@
+
+import random
+
+random_list = ['RADWARE', "APPLE", "CITY", "PLACE", "COUNTRY"]
+word = random.choice(random_list)
+word_list = []
+
+for i in word:
+    word_list.append("_")
+
+complete_word = False
+while complete_word == False:
+    print("Guess a letter\n")
+    input_letter = str(input())
+    if input_letter in word:
+        cnt = 0
+        for i in word:
+            if i == input_letter:
+                word_list[cnt] = i
+            cnt += 1
+
+    if "_" not in word_list:
+        complete_word = True
+
+    print(word_list)
+
+
+
+Output
+======
+['A', 'P', 'P', 'L', '_']
+Guess a letter
+
+E
+['A', 'P', 'P', 'L', 'E']
