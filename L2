@@ -1,5 +1,12 @@
 L2 Topics 
 =========
+
+How Backup Knows that Master is alive ? 
+What are the packets exchanged in vrrp ? 
+What are the fields in VRRP packet ? 
+What if pre empt is configured and master comes back from failed state ? what happens ? 
+How the sender knows that it has to send traffic to the link connected to back up if master is down ?
+
 VRRP
 ----
 Virtual route redundancy protocol
