@@ -20,3 +20,13 @@ Explain Status Codes
 
 What is diff between Sql and Mongo DB ? 
 Write Query to get the name of an employee with highest salary 
+
+what is difference between search and match in regex 
+what are different types of file handler 
+what is r+, rw+ (what is + means)
+what are the different ways of defining a dict 
+what are the data types acceptible in dict keys
+what is difference between list and tuple 
+
+
+
