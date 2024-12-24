@@ -52,3 +52,32 @@ for ele in repeted_ele:
 '''
 
 
+
+### Question asked in F5 Networks 
+
+
+sample_list2 = ["2fg", "67d8h", "f55g", "14", "fdg", "5t4rg"]
+
+
+
+integer_list = []
+empty_string = []
+my_string = ""
+
+my_dict = {} 
+
+for i in sample_list2:
+    for j in i:
+        if j.isdigit():
+            my_string = my_string + j
+    if my_string != "":
+        my_dict[i] = int(my_string)
+    else:
+        empty_string.append(i)
+    my_string =""
+    
+
+    
+integer_list = sorted([key for key, value in my_dict.items()], key= lambda x: my_dict[x]) 
+integer_list.append(empty_string)
+print(integer_list)
