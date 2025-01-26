@@ -40,4 +40,4 @@ emp_record = [
 
 print(sort_by(emp_record, key="age"))
 
-sorted_ele = sorted([elem for elem in emp_record], key=lambda x: emp_record[x]['name'], reverse=True)
+result = sorted([x for x in emp_record], key=lambda y:  y['age'])
