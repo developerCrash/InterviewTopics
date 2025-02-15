@@ -1,0 +1,29 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+
+*** Settings ***
+Library       SSHLibrary 
+Resource     resource.robot
+Suite Setup     Open Connection And Login
+Suite Teardown      Close Connection
+
+*** Variables ***
+${HOST}        10.10.10.1
+${USERNAME}    abc
+${PASSWORD}    abc123
+
+
+*** Keywords ***
+Open Connection And Login
+    Open Connection     ${HOST}
+    Login        $USERNAME}     ${PASSWORD}
+
+
+*** Test Cases ***
+PING CHECK 
+    [Documentation]    Ping the host and check the response
+    ${output}=    Execute Command     ping 10.10.10.1 -c 5 
+    Should Contain     ${output}      64 bytes from 10.10.10.1
+
+
