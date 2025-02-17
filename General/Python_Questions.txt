@@ -1,3 +1,21 @@
+WHat is r in regular expression string 
+what is shallow copy and deep copy 
+regex to match a url 
+what is oops concept in python ? explain with example code 
+what exactly happens when a decorator is called 
+how will you execute a function without using () (just by the name)
+  instead of display() -- use only display 
+Sort using lambda function 
+how will you use super keyword 
+
+
+
+what is the diff between pop and remove 
+is there a concept of array in python 
+what is maps in python and how do you define it 
+write decorator if function displays "how are you", decorator should display "Hello How are you"
+
+
 What is Different between Unit Test and Pytest 
 What is diference between Git and GitLab ? 
 Decorators, Iterators and Generators - Sample code
